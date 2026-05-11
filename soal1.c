@@ -87,6 +87,9 @@ void displayMatrix(int mat[N_MAX][N_MAX], int* length) {
             isolated[numOfIsolated++] = row; //masukkan data isolated nodes
         }
     }
+
+    printf("MAX_VERTEX %d\n", max_vertex);
+
     printf("ISOLATED ");
     if(numOfIsolated==0){ //jikalaut tidak ada isolated
         printf("NONE\n");
@@ -98,6 +101,5 @@ void displayMatrix(int mat[N_MAX][N_MAX], int* length) {
         }
     }
 
-    printf("MAX VERTEX %d\n", max_vertex);
     
 }
